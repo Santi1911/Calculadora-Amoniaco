@@ -1,1 +1,34 @@
+<div class="instrucciones">
+    <h2>Calculadora de Amoniaco No Ionizado</h2>
+    <p>
+        Esta calculadora te permite determinar la cantidad de <b>Amoniaco No Ionizado</b> presente en tu tanque de tilapias. 
+        Este parámetro es crucial, ya que niveles elevados pueden ser tóxicos para los peces.
+    </p>
+    <h3>📌 Datos requeridos:</h3>
+    <ul>
+        <li><b>Amoniaco Total (mg/L):</b> Resultado obtenido tras realizar la prueba con tu Kit API u otro test de amoníaco.</li>
+        <li><b>pH del agua:</b> Valor actual del pH en el tanque.</li>
+        <li><b>Temperatura del agua (°C):</b> Temperatura en grados Celsius en el tanque en el momento de la medición.</li>
+    </ul>
+    <p>
+        Una vez ingresados estos valores, la calculadora determinará el <b>Amoniaco No Ionizado</b>, 
+        que es la fracción tóxica del amoníaco total en el agua.
+    </p>
+</div>
+
+
+<h2>Calculadora de Amoniaco No Ionizado</h2>
+
+<label>Amoniaco Total (mg/L):</label>
+<input type="number" id="amonTotal" step="0.01"><br>
+
+<label>pH del Agua:</label>
+<input type="number" id="ph" step="0.1"><br>
+
+<label>Temperatura del Agua (°C):</label>
+<input type="number" id="temp" step="0.1"><br>
+
+<button onclick="calcularAmoniaco()">Calcular</button>
+
+<div id="resultado"></div>
 
